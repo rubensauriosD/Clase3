@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.box{
+    background-color: #0e89a5;
+    color: white;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.clr{
+    clear: both;
+}/* esto sirve para q los elementos no queden uno encima de otro */
+
+#box-2{
+    float: left;
+    width: 68%;
+}
+#box-3{
+    float: right;
+    width: 30%;
+}
+
+.box p{
+    text-align: center;
+    text-align: justify;
+}
+
+.box h3{
+    text-align: center;
+}

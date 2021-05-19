@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ACA ARRIBA HAGO EL RESETEO DEL CSS */
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* con esto el contenedor se pone en el medio */
+}
+
+.box{
+    display: inline-block;
+    background: url('/Clase4/eed5783d9a8c3241f98df11278c55f1a.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+
+h1{
+    padding: 1rem;
+    color: cornflowerblue;
+    background-color: black;
+}
+
+p{
+    padding: 1rem;
+    color: cornflowerblue;
+    background-color: black;
+}
+
+/* .box2{
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; 
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.box2 h1{
+    padding: 10px 5px;
+}
+
+.box3{
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; 
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;  
+    padding: 30px;
+}  */
+
+/* .rojo{
+    color: red;
+}
+.verde{
+    color: green;
+}
+.azul{
+    color: blue;
+}
+
+#myid{
+    color: gray;
+} */
+
