@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+:root{
+    --blanco: #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}/* es un reset del html */
+body{
+    font-family: 'Sigmar One', cursive;
+    margin: 0 !important;
+}
+/* ======================================================================================= */
+
+.navbar{
+    list-style: none;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 0;
+    overflow: auto;/* con esto hago que los li tengan el fondo de su padre navbar */
+
+}
+.navbar li{
+    float: right;
+}
+.navbar li a{
+    display: block;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    font-size: 1.5rem;
+    color: darkblue;
+}
+
+.menulist{
+    margin: 10px;
+    list-style: none;
+    border: 1px solid teal;
+    width: 150px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+.menulist li{
+    font-size: 18px;
+    line-height: 2.4rem;
+    border-bottom: 1px solid teal;
+}
+.menulist li:last-child{
+    border-bottom: none;
+}
+.menulist li a{
+    text-decoration: none;
+    color: black;
+}
+.menulist li a:hover{
+    color: peru;
+}

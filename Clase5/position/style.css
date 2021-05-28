@@ -1,0 +1,53 @@
+body{
+    height: 1600px;    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 1rem;
+}
+
+.contenedor{
+    display: relative;
+    width: 500px;   
+    height: 500px;
+    background: aquamarine;
+}
+/* yo necesito un contenedor relativo para poder meter un elemento absoluto */
+
+#box1{
+    background-color: green;
+    position: relative;
+    left: 50px;
+    top: 50px ;
+    z-index: 1;/* esto hace q si algo esta encima de el, lo mande hacia abajo y el este arriba de todos, el numero mas grandee es el q esta arriba de todos */
+}
+#box2{
+    position: absolute;   
+    top: 200px;
+    left: 200px;
+    background-color: blue;
+}
+#box3{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    background-color: red;
+}
+#box4{
+    position: fixed;
+    background-color: purple;
+    height: 74px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    z-index: 10;
+}
+#box5{
+    position: sticky;
+    background-color: yellow;
+    z-index: -1;
+}

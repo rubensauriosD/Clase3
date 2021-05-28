@@ -1,0 +1,30 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+/* con el wrap hago que si no me alcanza en el contenedor se pone abajo */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    border: 2px solid black;
+
+}
+
+.item{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    border: 1px solid green;
+    /*flex: 1;
+     con el 1 hago q ocupen todo el contenedor */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10rem;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#item1{
+
+}
