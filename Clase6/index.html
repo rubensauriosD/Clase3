@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="wrapper">
+
+        <header class="top">
+            <h1>
+                <a href="#">May The 4th Be With You</a>
+            </h1>
+        </header>
+
+    <nav class="navegacion">
+            <a href="#" class="toggle"> Menu</a>
+        <ul>
+            <li><a href="">Pikachu</a></li>
+            <li><a href="">Pikachu</a></li>
+            <li><a href="">Pikachu</a></li>
+            <li><a href="">Pikachu</a></li>
+            <li class="social">
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="social">
+                <a href=""><i class="fab fa-github"></i></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="items">
+        <div class="item">
+            <img src="./img/eed5783d9a8c3241f98df11278c55f1a.gif" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/eed5783d9a8c3241f98df11278c55f1a.gif" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/eed5783d9a8c3241f98df11278c55f1a.gif" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/eed5783d9a8c3241f98df11278c55f1a.gif" alt="">
+        </div>
+    </div>
+
+    <section class="details">
+        <p>Textooooooo ooooooooo</p>
+        <p>Textooooooooo ooooooooooooo oooooooo</p>
+        <p>Textoooooo ooooooooooooo ooooooooo oooooooo oooooooo</p>
+    </section>
+
+    <section class="signup">
+        <form class="signup">
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu email">
+            <button type="submit">Suscribirme</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>
+            &copy; Ruben ashe
+        </p>
+    </footer>
+</div>
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const navUl = document.querySelector('nav.navegacion');
+
+    toggle.addEventListener('click',() =>{
+        navUl.classList.toggle('open');//esto agrega la clase si no esta, y la saca si es que estaa
+    });
+</script>
+<!-- con ese script hago que aparezca el menu cuando llega a un tamano de celular con la mq -->
+</body>
+</html>

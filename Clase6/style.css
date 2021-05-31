@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+a{
+    color: black;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+a:hover{
+    color: blue;
+    background: rgba(0, 0, 0, 0.3);
+}
+section, footer{
+    text-align: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    padding: 20px;
+    margin: 20px;
+    font-weight: 100;
+}
+input{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.toggle{
+    display: none;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navegacion ul li{
+    flex: 3;
+    /* //quiero que ocupe en proporcion 3 todo el espacio disponible, con un numero en flex ahgo q ocupe todo el lugar disponible*/
+}
+.navegacion .social{
+    flex: 1;
+    /* y este ocupa un lugar en vez de 3 como el otro */
+}
+.items{
+    display: flex;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.item{
+    flex: 1 0 25%;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 2px 1px;
+}
+
+/* media queries */
+@media all and (max-width:1000px){
+    .navegacion ul{
+        flex-wrap: wrap;
+    }
+    .navegacion li{
+        flex: 1 1 50%;
+    }
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex:1 1 50%;
+        align-self: stretch;
+        margin: 10px 30px;
+    }
+}
+@media all and (max-width:500){
+    .wrapper > * {
+        order: 999;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion{
+        order: 1;
+    }
+    .navegacion li{
+        flex-basis: 100%;
+    }
+    .navegacion ul{
+        display: none;
+    }
+    .navegacion ul.open{
+        display: flex;
+    }
+    .toggle{
+        display: block;
+    }
+    .top{
+        order: 2;
+    }
+    .details{
+        order: 3;
+    }
+    .item{
+        flex:1 1 100%;
+        align-self: stretch;
+        margin: 10px 30px;
+        max-height: 300px;
+    }
+    .signup{
+        display: flex;
+        order: 4;
+        flex-direction: column;
+    }
+    .signup input button{
+        margin: 10px;
+    }
+}
