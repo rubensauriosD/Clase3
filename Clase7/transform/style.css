@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(190,186,255);
+    background: linear-gradient(90deg, rgba(190,186,255,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.box{
+    background:white;
+    width: 300px;
+    height: 200px;
+    /* transform: rotate(25deg); */
+    transition: all 1s ease-in-out;
+}
+.box:hover{
+    transform: rotate(360deg); /*esto gira en 360 grados*/
+    /* transform:scale(2) ; agranda su tamano *2*/
+    /* transform: skew(25deg); pone diagonal(25gradps) el elemento */
+    /* transform: translateX(100px); con esto muevo horizontal, pero existe translateY que es vertica */
+    /* transform: translate(100px, 100px);esta se mueve en ambos ejes X e Y */
+}

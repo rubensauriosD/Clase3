@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(190,186,255);
+    background: linear-gradient(90deg, rgba(190,186,255,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    transition-property: width, height, border-radius;
+    /* aca podes poner una propiedad para que afecte la transicion o pones all asi afecta a todas y no especificas */
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+}
+
+.box:hover{
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* CON ESTO HAGO QUE CUANDO PASE SOBRE LA IAGEN EL FONDO SE AGRANDE Y TOME FORMA REDONDA(la imagen en este caso no funciona bien pq es un gif, pero se ve el circulo) */
+}
