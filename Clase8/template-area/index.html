@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templat area</title>
+
+    <style> 
+    ul{
+        list-style: none;
+        padding: 5px;
+    }
+        .contenedor{
+            display: grid;
+            grid-template-areas: 
+            'header header header header'
+            'contenido contenido contenido sidebar'
+            'box1 box2 box3 box4'
+            'footer footer footer footer';
+            /* aca declaro los nombres para usar abajo al llamar las clases */
+            gap: 2rem;
+        }
+        .header, 
+        .contenido, 
+        .sidebar,
+        .box1, 
+        .box2,
+        .box3, 
+        .box4,
+        .footer{
+            border: 1px solid cornflowerblue;
+        }
+        .header{
+            grid-area: header;
+        }
+        .contenido{
+            grid-area: contenido;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .box1{
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        
+        @media (max-width: 500px) {
+            .contenedor{
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'contenido'
+            'sidebar'
+            'box1' 
+            'box2' 
+            'box3' 
+            'box4'
+            'footer';
+            /* aca declaro los nombres para usar abajo al llamar las clases */
+            gap: 2rem;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <header class="header">
+            <h1>Hola soy un header</h1>
+        </header>
+
+        <section class="contenido">
+            <h3>Hola padre</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eveniet exercitationem officiis repellat ipsum fugit eaque, nulla sit totam molestias reprehenderit eum assumenda qui, quibusdam delectus placeat dignissimos facilis. Nihil.</p>
+        </section>
+
+        <aside class="sidebar">  
+            <h3>chau rey</h3>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </aside>
+
+        <div class="box1">
+            <h3>box1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laudantium corporis eos debitis, alias, quasi ducimus voluptate ipsa error rerum sequi esse harum, est quibusdam inventore facere consequuntur repellat velit!</p>
+        </div>
+        <div class="box2">
+            <h3>box2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laudantium corporis eos debitis, alias, quasi ducimus voluptate ipsa error rerum sequi esse harum, est quibusdam inventore facere consequuntur repellat velit!</p>
+        </div>
+        <div class="box3">
+            <h3>box3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laudantium corporis eos debitis, alias, quasi ducimus voluptate ipsa error rerum sequi esse harum, est quibusdam inventore facere consequuntur repellat velit!</p>
+        </div>
+        <div class="box4">
+            <h3>box4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laudantium corporis eos debitis, alias, quasi ducimus voluptate ipsa error rerum sequi esse harum, est quibusdam inventore facere consequuntur repellat velit!</p>
+        </div>
+
+        <footer class="footer">
+            <p>Copyright &copy; pana ruben</p>
+        </footer>
+    </div>
+</body>
+</html>
