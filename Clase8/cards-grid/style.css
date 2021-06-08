@@ -1,6 +1,9 @@
 *, ::before, ::after{
     box-sizing: inherit;
 }
+html{
+    box-sizing: border-box;
+}
 body{
     background-color: #85FFBD;
 background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
@@ -38,4 +41,12 @@ letter-spacing: 1px;
 }
 .header h1{
     padding: 15px;
+}
+@media (max-width:500px ) {
+    .contenedor-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .card{
+        grid-template-columns: 1fr;
+    }
 }

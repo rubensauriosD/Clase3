@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website 😎</title>
+
+    <!-- el orden de los link importa pq el que tiene las variables o cosas importantes va primero -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>NUCBA-CONF</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <P class="price">$500</P>
+                <p>VIP + FOTO CON MIGO</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <P class="price">$222</P>
+                <p>FONDO + CON TUVIEJA 😘</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9746;</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Speakers</a>
+                </li>
+                <li>
+                    <a href="">Precios</a>
+                </li>
+                <li>
+                    <a href="">Code</a>
+                </li>
+                <li>
+                    <a href="">Vip</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🍔 </span>
+                <h3>Comida</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍺 </span>
+                <h3>Birra</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">💻 </span>
+                <h3>Code ashe</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎶 </span>
+                <h3>Musicaphite</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <video src="./assets/y2mate.com - Justin Bieber  Off My Face Live from Paris_480p.mp4" autoplay loop controls></video>
+            <div class="about_details">
+                <h2>Vamos a Codear!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequuntur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                <button>Info Plisssss &#10142;</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Instant Grams</h2>
+            <img src="https://source.unsplash.com/random/201x201">
+            <img src="https://source.unsplash.com/random/202x202">
+            <img src="https://source.unsplash.com/random/203x203">
+            <img src="https://source.unsplash.com/random/204x204">
+            <img src="https://source.unsplash.com/random/205x205">
+            <img src="https://source.unsplash.com/random/206x206">
+            <img src="https://source.unsplash.com/random/207x207">
+            <img src="https://source.unsplash.com/random/208x208">
+            <img src="https://source.unsplash.com/random/209x209">
+            <img src="https://source.unsplash.com/random/210x210">
+        </section>
+        
+    </div><!-- wrapper -->
+
+<script>
+    const navButton = document.querySelector('button[aria-expanded]');//asi llamas un atributo
+
+    function toggleNav({ target }) {
+        const expandir = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expandir)
+    }
+
+    navButton.addEventListener('click', toggleNav); 
+</script>
+<!-- con este scrpit(mas lo qesta en el mq del style, y cualq lugar donde llamo los atributos aria) hago que el menu aparezca o desaparezca cuando tenga menos de 1000px-->
+</body>
+</html>
